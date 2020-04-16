@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    font-weight: 300;
+}
+
+header{
+    background-color: #6200ee;
+    color: #fff;
+    text-align: center;
+    box-shadow: 3px 0 6px #333;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+header h1{
+    padding: 20px 50px;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+header > nav{
+    overflow: hidden;
+}
+header > nav > ul > li{
+    float: left;
+    width: 33.333%;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+header > nav ul > li > a{
+    padding: 12px 0;
+    display: block;
+    opacity: 0.8;
+    position: relative;
+}
+header > nav ul > li > a:hover,
+header > nav ul > li > a:active,
+header > nav ul > li > a.selected{
+    opacity: 1;
+}
+header > nav ul > li > a.selected::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    left: 0; bottom: 0;
+}
+
+section{
+    /* margin-top: 100px; */
+    text-align: center;
+    padding: 15px;
+    padding-top: 0;
+    overflow: hidden;
+}
+section h1{
+    padding-top: 130px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+#pet_list{
+    /* outline: 1px solid red; */
+    overflow: hidden;
+}
+#pet_list > li{
+    position: relative;
+    width: 49%;
+    overflow: hidden;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+#pet_list > li:nth-child(2n){
+    margin-right: 0;
+}
+#pet_list > li > img{
+    width: 100%;
+}
+#pet_list > li > .name{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    bottom: 4px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
